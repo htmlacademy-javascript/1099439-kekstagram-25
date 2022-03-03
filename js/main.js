@@ -3,10 +3,10 @@ function getRandomNumber(min, max) {
 }
 
 const MAX_LENGTH_COMMENT = 140;
-function measureComment(comment, MAX_LENGTH_COMMENT) {
-  return comment.length <= MAX_LENGTH_COMMENT; // Результат: true, если строка проходит по длине, и false — если не проходит
+function isValidComment(comment, maxLength) {
+  return comment.length <= maxLength; // Результат: true, если строка проходит по длине, и false — если не проходит
 }
 
 
 getRandomNumber(0, 10);
-measureComment('Комментарий', MAX_LENGTH_COMMENT);
+isValidComment('Комментарий', MAX_LENGTH_COMMENT);
